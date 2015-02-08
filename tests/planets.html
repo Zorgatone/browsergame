@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Planets</title>
+		<script>
+			var global = (typeof global !== 'undefined') ? global : ((typeof window !== 'undefined') ? window : Object.create(null));
+			
+			function clear() {
+				var p = document.getElementById("output");
+				
+				p.innerHTML = "";
+			}
+			
+			function log(str) {
+				var p = document.getElementById("output");
+				
+				p.innerHTML += str + "<br />\r\n";
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Planets</h1>
+		<p id="output">Generating 1 000 planets...<br /></p>
+		<script src="sizeof.js"></script>
+		<script src="planets.js"></script>
+	</body>
+</html>
